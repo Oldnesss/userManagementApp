@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 📋 Приложение Управления Пользователями/User Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Описание проекта
 
-## Available Scripts
+Простое React-приложение для управления списком пользователей с возможностью добавления, редактирования и удаления пользователей. Проект использует современный стек технологий и следует принципам чистой архитектуры.
 
-In the project directory, you can run:
+## ✨ Возможности
 
-### `npm start`
+- Добавление новых пользователей
+- Просмотр списка пользователей
+- Редактирование информации о пользователях
+- Удаление пользователей
+- Валидация данных при создании и редактировании
+- Локальное хранение данных через localStorage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Технологический стек
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React (иконки)
+- Context API
+- LocalStorage
 
-### `npm test`
+## 📦 Установка и запуск
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Клонируйте репозиторий
+```bash
+git clone https://github.com/your-username/user-management-app.git
+```
 
-### `npm run build`
+2. Установите зависимости
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Запустите проект
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Структура проекта
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── UI/
+│   │   ├── Button.tsx
+│   │   └── Input.tsx
+│   └── User
+│         ├── UserDetails.tsx
+│         ├── UserForm.tsx
+│         ├── UserFormUniversal.tsx
+│         └── UserList.tsx
+├── context/
+│   └── UserContext.tsx
+├── hooks/
+│   └── useUserContext.tsx
+├── services/
+│   ├── UserService.ts
+│   └── ValidationService.ts
+└── types/
+    └── User.interface.ts
+```
 
-### `npm run eject`
+## 🔍 Основные компоненты
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **UserContext**: Управление состоянием пользователей
+- **UserForm**: Форма создания нового пользователя
+- **UserFormUniversal**: Переиспользуемая форма
+- **UserList**: Список существующих пользователей
+- **UserDetails**: Детальная информация о выбранном пользователе
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Валидация
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Встроенный сервис валидации проверяет:
+- Обязательность полей
+- Корректность email
+- Наличие необходимых данных
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💾 Хранение данных
 
-## Learn More
+Данные хранятся в LocalStorage с использованием собственного сервиса `LocalStorageService`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

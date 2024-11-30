@@ -1,0 +1,41 @@
+.
+├── README.md
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── UI
+│   │   │   ├── Button.tsx
+│   │   │   └── Input.tsx
+│   │   └── User
+│   │       ├── UserDetails.tsx
+│   │       ├── UserForm.tsx
+│   │       ├── UserFormUniversal.tsx
+│   │       └── UserList.tsx
+│   ├── context
+│   │   └── UserContext.tsx
+│   ├── hooks
+│   │   └── useUserContext.tsx
+│   ├── index.css
+│   ├── index.js
+│   ├── sevrices
+│   │   ├── UserService.ts
+│   │   └── ValidationService.ts
+│   ├── type
+│   │   └── User.interface.ts
+│   └── utils
+│       └── localStorage.ts
+├── tailwind.config.js
+├── tree_project.txt
+└── tsconfig.json
+
+11 directories, 28 files
